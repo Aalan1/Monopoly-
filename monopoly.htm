@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Monopoly</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>Welcome to Monopoly!!</h1>
+
+<img src="Monopoly/Man.png">
+
+<script src="main.js">b
+</script>
+
+<table style="margin:auto;">
+  <tr>
+      <td style="color:red;text-align:center;">Player 1</td>
+      <td style="color:blue;text-align:center;">Player 2</td>
+      <td style="text-align:center;">Player 3</td>
+      <td style="color:orange;text-align:center;">Player 4</td>
+  </tr>
+  <tr>
+      <td><img src="Monopoly/Tokens/Dog.png" width="100" height="100"></td>
+      <td><img src="Monopoly/Tokens/Tophat.png" width="100" height="100"></td>
+      <td><img src="Monopoly/Tokens/Boot.png" width="100" height="100"></td>
+      <td><img src="Monopoly/Tokens/Battleship.png" width="100" height="100"></td>
+  </tr>
+  <tr>
+      <td id="playerMoney1" style="text-align:center;">Everyone</td>
+      <td id="playerMoney2" style="text-align:center;">starts</td>
+      <td id="playerMoney3" style="text-align:center;">with</td>
+      <td id="playerMoney4" style="text-align:center;">$1500</td>
+  </tr>
+</table>
+
+
+<br>
+
+<img id="MonopolyBoard" width="0" height="0" src="Monopoly/Board.png">
+<img id="Tophat" width="0" height="0" src="Monopoly/Tokens/Tophat.png">
+<img id="Dog" width="0" height="0" src="Monopoly/Tokens/Dog.png">
+<img id="Boot" width="0" height="0" src="Monopoly/Tokens/Boot.png">
+<img id="Battleship" width="0" height="0" src="Monopoly/Tokens/Battleship.png">
+
+<canvas id="MonopolyCanvas" width="1024" height="899" style="border:1px solid #000000;,margin:0">
+Your browser does not support the HTML canvas tag.
+</canvas>
+
+<h2>Roll the Dice:</h2>
+<button class="button button1" type="button" onclick="rollDice()">Roll Dice</button>
+
+<div class="row">
+  <div class="column">
+    <img id="firstDieImage" src="Monopoly/Dice/die.gif" style="width:100px;height:100px;">
+  </div>
+  <div class="column">
+    <img id="secondDieImage"src="Monopoly/Dice/die.gif" style="width:100px;height:100px;">
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <table id="Portfolio1">
+      <tr>
+       <th colspan="3" style="color:red;text-align:center;">Player 1</th>
+      </tr>
+      <tr>
+        <td>Property</td>
+        <td>Rent</td>
+        <td>Houses/Hotel</td>
+      </tr>
+    </table>
+  </div>
+  <div class="column">
+    <table id="Portfolio2">
+      <tr>
+       <th colspan="3" style="color:blue;text-align:center;">Player 2</th>
+      </tr>
+      <tr>
+        <td>Property</td>
+        <td>Rent</td>
+        <td>Houses/Hotel</td>
+      </tr>
+    </table>
+  </div>
+  <div class="column">
+    <table id="Portfolio3">
+      <tr>
+       <th colspan="3" style="text-align:center;">Player 3</th>
+      </tr>
+      <tr>
+        <td>Property</td>
+        <td>Rent</td>
+        <td>Houses/Hotel</td>
+      </tr>
+    </table>
+  </div>
+  <div class="column">
+    <table id="Portfolio4">
+      <tr>
+       <th colspan="3" style="color:orange;text-align:center;">Player 4</th>
+      </tr>
+      <tr>
+        <td>Property</td>
+        <td>Rent</td>
+        <td>Houses/Hotel</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+
+</body>
+</html>
